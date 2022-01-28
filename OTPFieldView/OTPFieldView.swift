@@ -283,6 +283,7 @@ extension OTPFieldView: UITextFieldDelegate {
             if displayType == .diamond || displayType == .underlinedBottom {
                 (textField as! OTPTextField).shapeLayer.fillColor = filledBackgroundColor.cgColor
                 (textField as! OTPTextField).shapeLayer.strokeColor = filledBorderColor.cgColor
+                (textField as! OTPTextField).textColor = UIColor.white
             }
             else {
                 textField.backgroundColor = filledBackgroundColor
